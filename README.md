@@ -6,6 +6,7 @@
 ## 機能
 
 ### TODO 管理 (`/todo`)
+
 | コマンド | 説明 |
 |----------|------|
 | `/todo create <title> [description]` | TODO を作成 |
@@ -16,6 +17,7 @@
 | `/todo delete <id>` | TODO を削除 |
 
 ### タスク管理 (`/task`)
+
 | コマンド | 説明 |
 |----------|------|
 | `/task create <project_id> <title> [description] [status] [priority]` | タスクを作成 |
@@ -25,6 +27,7 @@
 | `/task delete <id>` | タスクを削除 |
 
 ### プロジェクト管理 (`/project`)
+
 | コマンド | 説明 |
 |----------|------|
 | `/project create <title> [description]` | プロジェクトを作成 |
@@ -35,6 +38,7 @@
 ## セットアップ
 
 ### 前提条件
+
 - Go 1.21 以上
 - [github-task-controller](https://github.com/sikigasa/github-task-controller) が起動していること
 - Discord Bot Token ([Discord Developer Portal](https://discord.com/developers/applications) で作成)
@@ -93,6 +97,7 @@ go run ./cmd/bot
 ## ステータス & 優先度
 
 ### タスクステータス
+
 | 値 | 表示 |
 |----|------|
 | 0 | 📋 To Do |
@@ -100,6 +105,7 @@ go run ./cmd/bot
 | 2 | ✅ Done |
 
 ### タスク優先度
+
 | 値 | 表示 |
 |----|------|
 | 0 | 🟢 Low |
